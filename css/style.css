@@ -1,0 +1,253 @@
+*{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    font-family: 'PT Sans', sans-serif;
+    /* font-family: 'Roboto', sans-serif; */
+}
+
+/* gloupal margin 10% left and right */
+.mg_L{
+    margin: 0 10%;
+}
+.mg_t{
+    margin:3% 0;
+}
+li{
+    list-style: none;
+}
+a{
+    text-decoration: none;
+    color: #333333;
+    text-transform: capitalize;
+}
+.pb{
+    display: inline-block;
+    padding-bottom: 20%;
+}
+/*  ================================= */
+
+
+/* A- navigation */
+.home nav{
+    display: flex;
+    align-items: center;
+}
+
+/* A- navigation  : 1-logo */
+.logo{
+    width: 20%;
+}
+
+/* A- navigation  : 2-center list */
+.center_list{
+    width: 60%;
+}
+.center_items{
+    display: flex;
+}
+.center_items > li{
+    margin: 0 0.3%;
+    padding: 4% 0;
+    font-size: 15px;
+    letter-spacing: 0.5px;
+}
+.center_items > li > a{
+    padding: 15px 25px;
+    font-weight: 600;
+    position: relative;
+}
+.center_items > li > a::after  ,
+.center_items > li > a::before{
+    content: "";
+    width: 100%;
+    height: 100%;
+    position: absolute;
+    top: 0;
+    left: 0;
+    box-sizing: border-box;
+}
+.center_items > li > a::after{
+    transform: scaleY(0);
+    transition: transform .3s;
+    border-left: 2.5px solid #7b5233;
+    border-right: 2.5px solid #7b5233;
+}
+.center_items > li:hover a::after{
+    transform:scaleY(1); 
+}
+.center_items > li > a::before{
+    transform: scaleX(0);
+    transition: transform .4s;
+    border-top: 2.5px solid #7b5233;
+    border-bottom: 2.5px solid #7b5233;
+    transform-origin: left;
+}
+.center_items > li:hover a::before{
+    transition-delay:.2s ;
+    transform: scaleX(1);
+}
+
+/*...... dropdown list ceter..... */
+/* gloupal properity dropdown */
+.center_list .furn,
+.center_list .plas,
+.center_list .more{
+    position: relative;
+}
+.dropd_furn,
+.dropd_more,
+.dropd_plas{
+    position: absolute;
+    top: 100%;
+    left: 0;
+    background-color: white;
+    border: 2px solid #7b5233;
+    transform: scale(0);
+    transform-origin:20% 20%;
+    transition: all .4s;
+}
+.dropd_furn > li > a,
+.dropd_plas > li > a,
+.dropd_more > li > a{
+    font-size: 14px;
+    white-space: nowrap;
+}
+.dropd_furn > li:hover a,
+.dropd_plas > li:hover a,
+.dropd_more > li:hover a{
+    color: #7b5233;
+}
+.center_list .furn:hover .dropd_furn,
+.center_list .plas:hover .dropd_plas,
+.center_list .more:hover .dropd_more{
+    transform: scale(1);
+}
+/*....   1- dropd_furn      ..... */
+.dropd_furn{
+    display: grid;
+    grid-template-columns: repeat(3,1fr);
+}
+.dropd_furn > li{
+    padding: 3% 4.5vw 3% 12%;
+}
+.style{
+    color: #7b5233;
+    font-weight: bold;
+    display: block;
+    padding-top:20% ;
+}
+.dropd_furn span{
+    display: block;
+    width: 110px;
+    height: 1px;
+    background-color: #7b5233;
+    margin: 15px 0 5px ;
+    opacity: .4;
+}
+/* ....................................*/
+/*....   2- dropd_plas       ..... */
+.dropd_plas{
+    padding: 9% 0 9% 12%;
+}
+.dropd_plas > li{
+    padding: 3% 4.5vw 3% 0;
+}
+/* ....................................*/
+/*....   3- dropd_more       ..... */
+.dropd_more{
+    padding: 9% 0 9% 12%;
+}
+.dropd_more > li{
+    padding: 3% 4.5vw 3% 0;
+}
+/* ....................................*/
+
+
+/* A- navigation  : 3- right list */
+.right_list{
+    width: 20%;
+}
+.right_items{
+    display: flex;
+    justify-content: flex-end;
+}
+.right_items > li{
+    margin: 0 0 0 30px;
+}
+.right_items > li > a > i{
+    font-size: 28px;
+    font-weight: bolder; 
+}
+.right_list .last {
+    position:relative;
+}
+/*...... number bag ..... */
+.right_list .last i::after{
+    content: "0";
+    width: 20%;
+    height: 60%;
+    color: white;
+    background-color:#7b5233;
+    border-radius: 50%;
+    border: 1px solid #333333 ;
+    position: absolute;
+    top: 35%;
+    left: 15%;
+    font-size: 14px;
+    text-align: center;
+    line-height: 17px;
+}
+/* .......................*/
+
+.right_list i:hover ,
+.right_list .last i:hover span{
+    color: #7b5233;
+}
+.right_list span{
+    font-size: 14px;
+    text-transform: capitalize;
+    letter-spacing: 0.5px;
+    padding: 0 0 0 10px;
+    word-spacing: -2px;
+    font-weight: 600;
+    color: #333333;
+}
+/* ================================ */
+
+
+/* B- main page  */
+.home main .content_home{
+    width: 80%;
+}
+.content_home img{
+    width: 100%;
+}
+/* ================================ */
+
+
+/* C- footer title page  */
+h2{
+    width: fit-content;
+    text-transform: capitalize;
+    margin: 3% auto;
+    font-size: 28px;
+    font-weight: 800;
+    letter-spacing: .9px;
+    position: relative;
+} 
+h2::before{
+    content: "";
+    width: 28%;
+    height: 5%;
+    background-color: #7d716b;;
+    position: absolute;
+    bottom: -60%;
+    left: 36%;
+    transition: all .8s;
+}
+h2:hover::before{
+    width: 42%;
+    left: 30%;
+}
+/* ================================ */
