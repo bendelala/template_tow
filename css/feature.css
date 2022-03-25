@@ -1,0 +1,245 @@
+
+/* ..... nav_feature..... */
+.feature{
+    margin-top:3% ;
+    margin-bottom:3% ;
+}
+.feature .items{
+    display: flex;
+    justify-content: center;
+}
+.feature .items a{
+    display: block;
+    padding: 10px 20px;
+    margin: 0 5px;
+    font-size: 14px;
+    letter-spacing: 1.2px;
+    font-weight: 600;
+}
+.feature .items a:hover{
+    color: #7b5233;
+}
+
+
+/*...... stayle main .......  */
+.feature > main{
+    display: grid;
+    grid-template-columns:repeat(4,1fr) ;
+    gap: 4% 2%;
+}
+
+/* ....image.... */
+main .image{
+    height: 46vh;
+     position: relative;                /*  teset */
+}
+main img{
+    width: 100%;
+    height: 100%;
+}
+
+
+/* ....content_image.... */  
+    /* .......start + color start ...... */
+main .start ul{
+    display: flex;
+    font-size: 13px;
+    color: #dddddd;
+    padding-top: 6% ;
+}
+main .start ul li{
+    padding-left:1% ;
+}
+main > div:first-child .start li:nth-child(-n+4){
+    color: #ffb700;
+}
+main > div:nth-child(3) .start li:nth-child(-n+3){
+    color: #ffb700;
+}
+main div:nth-child(4) .start li,
+main div:nth-child(7) .start li{
+    color: #ffb700;
+}
+
+
+
+main .content_image span{
+    font-size: 14px;
+    text-transform: capitalize;
+    letter-spacing: .6px;
+    font-weight: normal;
+    color: rgb(53, 51, 51);
+    padding-top: 3%;
+    display: block;
+}
+main .item:hover span{
+    color: #7b5244;
+}
+
+main .content_image h3,
+main .content_image del{
+    font-size: 14px;
+    letter-spacing: .6px;
+    color: black;
+    font-weight:900;
+    padding-top: 3%;
+    font-family: 'Roboto',sans-serif;
+}
+main .content_image del{
+    padding-left: 3%;
+    color: rgb(53, 51, 51);
+    font-weight: normal;
+}
+
+
+
+
+/* ..... section off..... */
+main div:nth-child(2) .image::after,
+main div:nth-child(5) .image::after,
+main div:nth-child(6) .image::after,
+main div:nth-child(7) .image::after,
+main div:nth-child(8) .image::after{
+    width: 14%;
+    height: 5%;
+    font-size: 13px;
+    text-transform:capitalize;
+    text-align: center;
+    line-height: 20px;
+    background-color: #7b5244;
+    color: #fff;
+    position: absolute;
+    top: 3%;
+    right:4%;
+    transition: all .4s;
+}
+main div:nth-child(2) .image::after{
+    content: "8% off";
+}
+main div:nth-child(5) .image::after{
+    content: "2% off";
+}
+main div:nth-child(6) .image::after{
+    content: "11% off";
+}
+main div:nth-child(7) .image::after{
+    content: "6% off";
+}
+main div:nth-child(8) .image::after{
+    content: "3% off";
+}
+
+main > div:nth-child(n):hover .image::after{
+    opacity: 0;
+}
+
+/* ..... section sale..... */
+main div:nth-child(2) .over_image a::after,
+main div:nth-child(5) .over_image a::after,
+main div:nth-child(6) .over_image a::after,
+main div:nth-child(7) .over_image a::after,
+main div:nth-child(8) .over_image a::after{
+    content: "sale";
+    width: 14%;
+    height: 5%;
+    font-size: 13px;
+    text-transform:capitalize;
+    text-align: center;
+    line-height: 20px;
+    background-color: black;
+    color: #fff;
+    position: absolute;
+    top: 3%;
+    left:4%;
+    opacity: 0;
+    transition: all .4s;
+}
+main > div:nth-child(n):hover .over_image a::after{
+    opacity: .95;
+}
+
+/*.............hover images......  */
+main .item .over_image a{
+    width: 100%;
+    height: 100%;
+    position: absolute;
+    background-size: cover;
+    background-position: center;
+    top: 0;
+    left: 0;
+    transform: scaleX(0);
+    opacity: 0;
+    transition: all .4s ease-in-out 0s;
+}
+main .item:nth-child(1) .over_image a{
+    background-image: url("../images/category-banner1.jpg");
+} 
+main .item:nth-child(2) .over_image a{
+    background-image: url("../images/category-banner2.jpg");
+} 
+main .item:nth-child(3) .over_image a{
+    background-image: url("../images/chair6.jpg");
+} 
+main .item:nth-child(4) .over_image a{
+    background-image: url("../images/chair5.jpg");
+} 
+main .item:nth-child(5) .over_image a{
+    background-image: url("../images/chair4.jpg");
+} 
+main .item:nth-child(6) .over_image a{
+    background-image: url("../images/chair3.jpg");
+} 
+main .item:nth-child(7) .over_image a{
+    background-image: url("../images/chair2.jpg");
+} 
+main .item:nth-child(8) .over_image a{
+    background-image: url("../images/chair1.jpg");
+} 
+
+/* fulter */
+main .item:nth-child(n):hover .over_image a::before{
+    content: "";
+    width: 100%;
+    height: 100%;
+    background-color: #fff;
+    position: absolute;
+    top: 0;
+    left: 0;
+    opacity: .4;
+}
+
+main .over_image ul{
+    display: flex;
+    justify-content: center;
+    height: 60px;
+    margin-top:50%;
+}
+main .over_image li{
+    width: 45px;
+    height: 40px;
+    color: #fff;
+    background-color: black;
+    margin-left:2%;
+    text-align: center;
+    font-size: 16px;
+    line-height: 40px;
+    transform: scale(0);
+    opacity: 0;
+    transition: all .4s ease-in-out 0s;
+}
+main .over_image li:nth-child(2n+1){
+    align-self: flex-end;
+}
+main .over_image li:hover{
+    background-color: #7b5244;
+}
+
+main .item:hover .over_image a{
+    transform: scaleX(1);
+    opacity: 1;
+}
+main .item:hover .over_image li{
+    transform: scale(1);
+    opacity: .95;
+}
+

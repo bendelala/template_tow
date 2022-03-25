@@ -1,0 +1,195 @@
+.disparait{
+    background-image: url(../images/service-icon.png);
+    background-repeat: no-repeat;
+    height: 50px;
+    display: inline-block;
+    width: 25%;
+    float: left;
+    margin-left: 4%;
+    transition: background-position .4s;
+}
+
+/* .discount{
+    background-color: antiquewhite;
+} */
+.disc_one{
+    display: flex;
+    justify-content: space-between;
+}
+
+/* ......... first div ...... */
+/* ..... header ..... */
+header{
+    /* background-color: aqua; */
+}
+.img_header{
+    float: left;
+}
+.cont_header{  
+    float: left;
+    padding: 0 0 0 2%;
+}
+.cont_header > span{
+    font-size: 16px;
+    font-weight: bold;
+    letter-spacing: .8px;
+    line-height: 30px;
+    text-transform: capitalize;
+    cursor: pointer;
+}
+.cont_header > p{
+    color: #888888;
+    letter-spacing: 0.6px;
+    font-size: 14px;
+    text-transform: capitalize;
+}
+
+/* ..... main ..... */
+main > p{
+    color: #888888;
+    font-size: 13px;
+    line-height:32px;
+    letter-spacing: .8px;
+    padding-top: 8% ;
+    text-align: justify;
+}
+
+/* .....footer..... */
+.disc_one footer{
+    display: flex;
+    justify-content: flex-end;
+    margin-top: 12%;
+}
+.disc_one footer span{
+    width: 9.5%;
+    margin-left: 12px;
+    height: 2px;
+    background-color: #888888;
+}
+.disc_one footer  span:hover{
+    background-color: #996c4b;
+    cursor: pointer;
+}
+.disc_one > div:nth-child(1){
+    background-color: #f7f3ef;
+    width: 44%;
+    height: 46vh;
+    padding: 5% 3% 3%;
+}
+.disc_one > div:nth-child(2){
+    background-image: url("../images/cms-banner-1.jpg");
+    background-repeat: no-repeat;
+    background-size: cover;
+    width: 26%;
+}
+.disc_one > div:nth-child(3){
+    background-image: url("../images/cms-banner-2.jpg");
+    background-repeat: no-repeat;
+    background-size: cover;
+    width: 26%;
+}
+
+
+/* ..... item_main........ */
+.disc_one .item_main{
+    margin-left: 8% ;
+}
+.disc_one .item_main p{
+    font-size: 20px;
+    text-transform: capitalize;
+    font-weight: 100;
+    letter-spacing: .6px;
+    color: #7b5233;
+}
+.disc_one .item_main span{
+    font-size: 23px;
+    font-weight: 800;
+    text-transform: capitalize;
+    letter-spacing: .6px;
+}
+
+/* .....hover item_main */
+.disc_one > div:nth-child(2):hover,
+.disc_one > div:nth-child(3):hover{
+    transition: transform .3s;
+}
+
+.disc_one > div:nth-child(2):hover,
+.disc_one > div:nth-child(3):hover{
+    transform: scale(1.02);
+}
+
+
+/* ........ disc_tow....... */
+.disc_tow{
+    display: flex;
+    padding-top: 2%;
+}
+
+.disc_tow > div:nth-child(n){
+    border-left:1px solid #e0dede ;
+    flex: 1;
+    
+}
+.disc_tow > div:nth-child(1){
+    border: none;
+}
+
+.disc_tow .item1 > .disparait{
+    background-position: center  0px;
+}
+.disc_tow .item2 > .disparait{
+    background-position: center  -184px;
+}
+.disc_tow .item3 > .disparait{
+    background-position: center  -370px;
+}
+.disc_tow .item4 > .disparait{
+    background-position: center  -552px;
+}
+.disc_tow .item5 > .disparait{
+    background-position: center  -738px;
+}
+/*  ..... hover items..... */
+.disc_tow .item1 > .disparait:hover{
+    background-position: center  -92px;
+}
+.disc_tow .item2 > .disparait:hover{
+    background-position: center  -276px;
+}
+.disc_tow .item3 > .disparait:hover{
+    background-position: center  -462px;
+}
+.disc_tow .item4 > .disparait:hover{
+    background-position: center  -644px;
+}
+.disc_tow .item5 > .disparait:hover{
+    background-position: center  -830px;
+}
+
+
+.disc_tow .cont_item{
+    float:left;
+    padding-left: 2%;
+}
+.disc_tow .cont_item h3{
+    font-size: 17px;
+    font-weight: 600;
+    letter-spacing: .6px;
+    text-transform: capitalize;
+}
+.disc_tow .cont_item span{
+    font-size: 13px;
+    font-weight: normal;
+    letter-spacing: .6px;
+    text-transform: capitalize;
+    color: #888888;
+}
+
+/* ..... line div disc_tow ..... */
+.discount > .line{
+    margin-top: 4% ;
+    height: 1px;
+    background-color: #e0dede;
+    display: block;
+}

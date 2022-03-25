@@ -1,0 +1,95 @@
+.chairs{
+    display: flex;
+    justify-content: space-between;
+}
+
+.item_chairs{
+    width: 23.5%;
+}
+.img_chairs img{
+    width: 100%;
+    transition: all .3s;
+}
+
+
+.content_chairs{
+    margin: 8% 0 0 0;
+}
+.content_chairs div:first-child{
+    display: inline-block;
+}
+.header_chairs{
+    color:#888888;
+    text-transform: capitalize;
+    font-size: 14px;
+    letter-spacing: .5px;
+}
+.paragraph_chris{
+    text-transform: capitalize;
+    font-size: 16px;
+    letter-spacing: 0.5px;
+    font-family: 'Roboto',sans-serif;
+    font-weight: 900;
+    padding-top: 7%;
+    transition: all .2s;
+}
+.paragraph_chris:hover{
+    color: #7b5233;
+}
+
+/* create icone amgler */
+.content_chairs div:last-child{
+    display: inline-block;
+    float: right;
+}
+.icone i{
+    display: inline-block;
+    width: 45px;
+    height: 45px;
+    font-size: 20px;
+    text-align: center;
+    line-height: 45px;
+    margin-top: 5px;
+    color: #fff;
+    background-color: #996c4b;
+    opacity: 0;
+    transition: all .3s;
+}
+.icone i:hover{
+    background-color: #000;
+}
+.item_chairs:hover .img_chairs img{
+                box-shadow: 1px 1px 10px 3px #dddddd,
+                            -1px -1px 10px 3px #dddddd;
+}
+.item_chairs:hover .icone i{
+    opacity: 1;
+}
+/* ........................ */
+
+/* Create point + hover */
+.point{
+    display: flex;
+    justify-content: center;
+}
+.point > span{
+    border-radius:50% ;
+    margin-left: 10px;
+} 
+.point_one{
+    background-color: black;
+    width: 12px;
+    height: 12px;
+    transition: all .3s;
+}
+.point_tow{
+    background-color: #7b5233;
+    width: 14px;
+    height: 14px;
+}
+.point_one:hover{
+    background-color: #7b5233;
+    width: 14px;
+    height: 14px;
+}
+/* ........................ */
