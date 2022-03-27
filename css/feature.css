@@ -31,7 +31,7 @@
 /* ....image.... */
 main .image{
     height: 46vh;
-     position: relative;                /*  teset */
+    position: relative;           
 }
 main img{
     width: 100%;
@@ -40,7 +40,7 @@ main img{
 
 
 /* ....content_image.... */  
-    /* .......start + color start ...... */
+/* .......start + color start ...... */
 main .start ul{
     display: flex;
     font-size: 13px;

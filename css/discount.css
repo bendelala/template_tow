@@ -3,9 +3,9 @@
     background-repeat: no-repeat;
     height: 50px;
     display: inline-block;
-    width: 25%;
+    width: 20%;
     float: left;
-    margin-left: 4%;
+    /* margin-left: 4%; */
     transition: background-position .4s;
 }
 
@@ -63,13 +63,17 @@ main > p{
 .disc_one footer span{
     width: 9.5%;
     margin-left: 12px;
-    height: 2px;
+    height: 2.5px;
     background-color: #888888;
 }
 .disc_one footer  span:hover{
     background-color: #996c4b;
     cursor: pointer;
 }
+
+
+
+
 .disc_one > div:nth-child(1){
     background-color: #f7f3ef;
     width: 44%;
@@ -129,7 +133,8 @@ main > p{
 .disc_tow > div:nth-child(n){
     border-left:1px solid #e0dede ;
     flex: 1;
-    
+    padding:0 .6% 0 1% ;
+    box-sizing: border-box;
 }
 .disc_tow > div:nth-child(1){
     border: none;
@@ -173,7 +178,7 @@ main > p{
     padding-left: 2%;
 }
 .disc_tow .cont_item h3{
-    font-size: 17px;
+    font-size: 16px;
     font-weight: 600;
     letter-spacing: .6px;
     text-transform: capitalize;

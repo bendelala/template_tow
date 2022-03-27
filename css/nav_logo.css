@@ -1,0 +1,13 @@
+.nav_client{
+    display: flex;
+    padding: 3.5% 0 ;
+    justify-content: space-around;
+}
+
+.nav_client .client{
+    opacity: .5;
+    transition: all .3s;
+}
+.nav_client .client:hover{
+    opacity: 1;
+}

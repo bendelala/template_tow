@@ -1,0 +1,70 @@
+.necess{
+    display: grid;
+    grid-template-columns: repeat(6,1fr);
+    grid-template-rows: 46vh;
+    gap: 0% 2%;
+    margin-top: 8%;
+}
+
+/* .....style play ..... */
+.play{
+    grid-column:span 2;
+}
+.play img{
+    width: 100%;
+    height: 100%;
+    background-size: cover;
+}
+
+/* .....style div_tow ..... */
+.div_tow{
+    grid-column: span 4;
+    background-color: #f7f3ef;
+    padding: 5% 3% 3%;
+}
+
+/* ... header .... */
+.div_tow header .date,
+.div_tow header .title{
+    float: left;
+}
+header .date span{
+    display: block;
+    color: #996b5c;
+}
+header .date .number{
+    font-size: 30px;
+    font-weight: 900;
+}
+header .date .day{
+    font-size: 15px;
+    font-weight: 600;
+    letter-spacing: .6px;
+}
+header .title h3{
+    font-size: 17px;
+    letter-spacing: 1px;
+}
+
+/* ... main .... */
+.div_tow main p{
+    padding: 6% 7% 0 0 ;
+}
+
+
+/* .....footer..... */
+.div_tow footer{
+    display: flex;
+    justify-content: flex-end;
+    margin-top: 10%;
+}
+.div_tow footer span{
+    width: 6%;
+    margin-left: 13px;
+    height: 2.5px;
+    background-color: #888888;
+}
+.div_tow footer  span:hover{
+    background-color: #996c4b;
+    cursor: pointer;
+}
